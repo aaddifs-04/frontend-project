@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Authentication</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Document Authentication</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="detection.html">Detection</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="upload.html">Document Authentication</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Upload Document</h2>
+      <form id="upload-form">
+        <input
+          type="file"
+          id="document"
+          name="document"
+          accept="image/*"
+          required
+        />
+        <button type="button" onclick="authenticateDocument()">
+          Authenticate
+        </button>
+      </form>
+      <div id="auth-result"></div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Fraud Detection System</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

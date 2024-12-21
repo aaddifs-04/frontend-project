@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fraud Detection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fraud Detection</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="detection.html">Detection</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="upload.html">Document Authentication</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Enter Customer Details for Fraud Detection</h2>
+      <form id="detection-form">
+        <label for="premium">Premium:</label>
+        <input type="number" id="premium" name="premium" required />
+        <label for="sumAssured">Policy Sum Assured:</label>
+        <input type="number" id="sumAssured" name="sumAssured" required />
+        <button type="button" onclick="detectFraud()">Detect Fraud</button>
+      </form>
+      <div id="result"></div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Fraud Detection System</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
